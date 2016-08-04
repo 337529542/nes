@@ -1,0 +1,113 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/nes/s1/proj/txrx/pa.fromHdl.tcl
+# create_project -name txrx -dir "E:/nes/s1/proj/txrx/planAhead_run_4" -part xc6slx9tqg144-2
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "txrx.ucf" [current_fileset -constrset]
+Adding file 'E:/nes/s1/proj/txrx/txrx.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/RAM_2k.ngc}]
+# set hdlfile [add_files [list {ipcore_dir/RAM_2k.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BUS_RAM_2k.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {wr_reg_read.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {wr_ping.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {wr_cpu_ctl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {wr_bus_data.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {wr_bus_addr.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cy_tx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cy_rx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cpu_clk_ctl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {CPU.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BusHub.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BUS.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {txrx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top txrx $srcset
+# add_files [list {txrx.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/RAM_2k.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "E:/nes/s1/proj/txrx/ipcore_dir/RAM_2k.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/BUS_RAM_2k.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/wr_reg_read.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/wr_ping.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/wr_cpu_ctl.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/wr_bus_data.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/wr_bus_addr.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/cy_tx.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/cy_rx.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/cpu_clk_ctl.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/CPU.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/BusHub.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/BUS.v" into library work
+Analyzing Verilog file "E:/nes/s1/proj/txrx/txrx.v" into library work
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM_2k.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM_2k.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM_2k.edif ...
+ngc2edif: Total memory usage is 78348 kilobytes
+
+Reading core file 'E:/nes/s1/proj/txrx/ipcore_dir/RAM_2k.ngc' for (cell view 'RAM_2k', library 'work', file 'RAM_2k.v')
+Parsing EDIF File [./.Xil/PlanAhead-3732-cy-PC/ngc2edif/RAM_2k.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-3732-cy-PC/ngc2edif/RAM_2k.edif]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [E:/nes/s1/proj/txrx/txrx.ucf]
+Finished Parsing UCF File [E:/nes/s1/proj/txrx/txrx.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 010e06df
+open_rtl_design: Time (s): elapsed = 00:00:15 . Memory (MB): peak = 708.402 ; gain = 214.086
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Aug 04 09:11:55 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

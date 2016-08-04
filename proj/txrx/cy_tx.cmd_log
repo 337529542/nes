@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/nes/s1/proj/txrx/cy_tx.xst" -ofn "E:/nes/s1/proj/txrx/cy_tx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 cy_tx.ngc cy_tx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cy_tx_map.ncd cy_tx.ngd cy_tx.pcf 
+par -w -intstyle ise -ol high -mt off cy_tx_map.ncd cy_tx.ncd cy_tx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml cy_tx.twx cy_tx.ncd -o cy_tx.twr cy_tx.pcf 

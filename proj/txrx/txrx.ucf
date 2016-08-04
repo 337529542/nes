@@ -1,0 +1,21 @@
+
+NET "rx" LOC = P95;
+NET "tx" LOC = P94;
+NET "rst_n" LOC = P97;
+
+NET "rst_n" PULLUP;
+NET "rst_n" IOSTANDARD = LVCMOS33;
+NET "rx" IOSTANDARD = LVCMOS33;
+NET "tx" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+
+NET "clk" LOC = P123;
+#Created by Constraints Editor (xc6slx9-tqg144-2) - 2016/07/19
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50 %;
+
+
+NET "debug" LOC = P98;
+
+
+NET "debug" IOSTANDARD = LVCMOS33;

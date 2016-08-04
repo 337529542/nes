@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\nes\s1\proj\txrx\impact.xsl
+OUTFILE=E:\nes\s1\proj\txrx\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\nes\s1\proj\txrx
+LICENSE=iMPACT
+USER_INFO=iMPACT

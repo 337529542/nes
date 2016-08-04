@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Jul 21 09:16:52 2016
+# Process ID: 7616
+# Log file: E:/nes/s1/proj/txrx/planAhead_run_3/planAhead.log
+# Journal file: E:/nes/s1/proj/txrx/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/nes/s1/proj/txrx/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P98 [get_ports debug]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports rx]
+endgroup
+startgroup
+set_property package_pin P94 [get_ports tx]
+endgroup
+startgroup
+set_property package_pin P97 [get_ports rst_n]
+endgroup
+save_constraints

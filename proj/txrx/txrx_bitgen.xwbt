@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\nes\s1\proj\txrx\txrx.ncd
+OUTFILE=E:\nes\s1\proj\txrx\txrx.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=E:\nes\s1\proj\txrx
+LICENSE=WebPack
+USER_INFO=__0_0_0

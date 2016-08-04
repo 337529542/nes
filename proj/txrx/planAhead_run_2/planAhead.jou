@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Jul 19 16:15:47 2016
+# Process ID: 9712
+# Log file: E:/nes/s1/proj/txrx/planAhead_run_2/planAhead.log
+# Journal file: E:/nes/s1/proj/txrx/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/nes/s1/proj/txrx/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P5 [get_ports debug]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list debug]]
+save_constraints

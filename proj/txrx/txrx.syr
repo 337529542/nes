@@ -1,0 +1,1029 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: txrx.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "txrx.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "txrx"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : txrx
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\nes\s1\proj\txrx\ipcore_dir\RAM_2k.v" into library work
+Parsing module <RAM_2k>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\BUS_RAM_2k.v" into library work
+Parsing module <BUS_RAM_2k>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\wr_reg_read.v" into library work
+Parsing module <wr_reg_read>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\wr_ping.v" into library work
+Parsing module <wr_ping>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\wr_cpu_ctl.v" into library work
+Parsing module <wr_cpu_ctl>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\wr_bus_data.v" into library work
+Parsing module <wr_bus_data>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\wr_bus_addr.v" into library work
+Parsing module <wr_bus_addr>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\cy_tx.v" into library work
+Parsing module <cy_tx>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\cy_rx.v" into library work
+Parsing module <cy_rx>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\cpu_clk_ctl.v" into library work
+Parsing module <cpu_clk_ctl>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\CPU.v" into library work
+Parsing module <CPU>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\BusHub.v" into library work
+Parsing module <BusHub>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\BUS.v" into library work
+Parsing module <BUS>.
+Analyzing Verilog file "E:\nes\s1\proj\txrx\txrx.v" into library work
+Parsing module <txrx>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <txrx>.
+
+Elaborating module <BusHub>.
+WARNING:HDLCompiler:1127 - "E:\nes\s1\proj\txrx\txrx.v" Line 83: Assignment to u2RData ignored, since the identifier is never used
+
+Elaborating module <BUS>.
+
+Elaborating module <BUS_RAM_2k>.
+
+Elaborating module <RAM_2k>.
+WARNING:HDLCompiler:1499 - "E:\nes\s1\proj\txrx\ipcore_dir\RAM_2k.v" Line 39: Empty module <RAM_2k> remains a black box.
+
+Elaborating module <cy_tx>.
+
+Elaborating module <cy_rx>.
+
+Elaborating module <CPU>.
+
+Elaborating module <cpu_clk_ctl>.
+WARNING:HDLCompiler:413 - "E:\nes\s1\proj\txrx\cpu_clk_ctl.v" Line 43: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <wr_ping>.
+
+Elaborating module <wr_reg_read>.
+
+Elaborating module <wr_cpu_ctl>.
+
+Elaborating module <wr_bus_addr>.
+
+Elaborating module <wr_bus_data>.
+WARNING:HDLCompiler:413 - "E:\nes\s1\proj\txrx\txrx.v" Line 125: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\nes\s1\proj\txrx\txrx.v" Line 126: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:634 - "E:\nes\s1\proj\txrx\txrx.v" Line 67: Net <u2Addr[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\nes\s1\proj\txrx\txrx.v" Line 69: Net <u2WData[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\nes\s1\proj\txrx\txrx.v" Line 70: Net <u2Cmd> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\nes\s1\proj\txrx\txrx.v" Line 71: Net <u2RW> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <txrx>.
+    Related source file is "E:\nes\s1\proj\txrx\txrx.v".
+INFO:Xst:3210 - "E:\nes\s1\proj\txrx\txrx.v" line 81: Output port <In2_RData> of the instance <bushub1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\nes\s1\proj\txrx\txrx.v" line 81: Output port <In2_Finish> of the instance <bushub1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <u2Addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <u2WData> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <u2Cmd> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <u2RW> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <txrx> synthesized.
+
+Synthesizing Unit <BusHub>.
+    Related source file is "E:\nes\s1\proj\txrx\BusHub.v".
+        S_Wait = 0
+        S_BUSBusy = 1
+        S_Finish = 2
+    Found 1-bit register for signal <cmd2>.
+    Found 1-bit register for signal <cmd>.
+    Found 1-bit register for signal <channel>.
+    Found 2-bit register for signal <state>.
+    Found 1-bit register for signal <fin1>.
+    Found 1-bit register for signal <fin2>.
+    Found 16-bit register for signal <addr1>.
+    Found 8-bit register for signal <wdata1>.
+    Found 1-bit register for signal <rw1>.
+    Found 16-bit register for signal <addr2>.
+    Found 8-bit register for signal <rdata1>.
+    Found 8-bit register for signal <rdata2>.
+    Found 1-bit register for signal <cmd1>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_1_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  63 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <BusHub> synthesized.
+
+Synthesizing Unit <BUS>.
+    Related source file is "E:\nes\s1\proj\txrx\BUS.v".
+    Summary:
+	no macro.
+Unit <BUS> synthesized.
+
+Synthesizing Unit <BUS_RAM_2k>.
+    Related source file is "E:\nes\s1\proj\txrx\BUS_RAM_2k.v".
+        S_Wait = 0
+        S_Finish = 1
+    Found 1-bit register for signal <state>.
+    Found 1-bit register for signal <wea>.
+    Found 1-bit register for signal <fin>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <BUS_RAM_2k> synthesized.
+
+Synthesizing Unit <cy_tx>.
+    Related source file is "E:\nes\s1\proj\txrx\cy_tx.v".
+        clkdiv = 434
+        S_Idle = 0
+        S_Start = 1
+        S_Data0 = 2
+        S_Data1 = 3
+        S_Data2 = 4
+        S_Data3 = 5
+        S_Data4 = 6
+        S_Data5 = 7
+        S_Data6 = 8
+        S_Data7 = 9
+        S_Stop1 = 10
+        S_Stop2 = 11
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <txr>.
+    Found 8-bit register for signal <da>.
+    Found 10-bit register for signal <counter>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 23                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_6_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <counter[9]_GND_6_o_add_42_OUT> created at line 166.
+    Found 10-bit comparator greater for signal <n0025> created at line 161
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  13 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <cy_tx> synthesized.
+
+Synthesizing Unit <cy_rx>.
+    Related source file is "E:\nes\s1\proj\txrx\cy_rx.v".
+        clkdiv = 434
+        clkdiv_offset = 217
+        S_PerStart = 0
+        S_Start = 1
+        S_D0 = 2
+        S_D1 = 3
+        S_D2 = 4
+        S_D3 = 5
+        S_D4 = 6
+        S_D5 = 7
+        S_D6 = 8
+        S_D7 = 9
+        S_Stop = 10
+        S_ZeroEn = 11
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <enr>.
+    Found 1-bit register for signal <da<7>>.
+    Found 1-bit register for signal <da<6>>.
+    Found 1-bit register for signal <da<5>>.
+    Found 1-bit register for signal <da<4>>.
+    Found 1-bit register for signal <da<3>>.
+    Found 1-bit register for signal <da<2>>.
+    Found 1-bit register for signal <da<1>>.
+    Found 1-bit register for signal <da<0>>.
+    Found 10-bit register for signal <counter>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 25                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_7_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <counter[9]_GND_7_o_add_47_OUT> created at line 165.
+    Found 10-bit comparator greater for signal <counter[9]_GND_7_o_LessThan_7_o> created at line 71
+    Found 10-bit comparator greater for signal <n0027> created at line 156
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <cy_rx> synthesized.
+
+Synthesizing Unit <CPU>.
+    Related source file is "E:\nes\s1\proj\txrx\CPU.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <soft_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <CPU> synthesized.
+
+Synthesizing Unit <cpu_clk_ctl>.
+    Related source file is "E:\nes\s1\proj\txrx\cpu_clk_ctl.v".
+        S_Wait = 0
+        S_DoRst = 1
+        S_DoStep = 2
+    Found 1-bit register for signal <clkctl>.
+    Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <cpu_rst_n>.
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_in (rising_edge)                           |
+    | Reset              | rst_n_INV_8_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <cpu_clk_ctl> synthesized.
+
+Synthesizing Unit <wr_ping>.
+    Related source file is "E:\nes\s1\proj\txrx\wr_ping.v".
+        S_Wait = 0
+        S_Send = 1
+        S_Finish = 2
+    Found 2-bit register for signal <state>.
+    Found 8-bit register for signal <data>.
+    Found 1-bit register for signal <t_en>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_9_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <wr_ping> synthesized.
+
+Synthesizing Unit <wr_reg_read>.
+    Related source file is "E:\nes\s1\proj\txrx\wr_reg_read.v".
+        S_Wait = 0
+        S_Send = 1
+        S_Finish = 2
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <data>.
+    Found 1-bit register for signal <ten>.
+    Found finite state machine <FSM_5> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_11_o (positive)                      |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit 15-to-1 multiplexer for signal <opcode[3]_PC[3]_wide_mux_4_OUT> created at line 59.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <wr_reg_read> synthesized.
+
+Synthesizing Unit <wr_cpu_ctl>.
+    Related source file is "E:\nes\s1\proj\txrx\wr_cpu_ctl.v".
+        S_Wait = 0
+        S_Rst = 1
+        S_Step = 3
+        S_WaitBusyAndSendResult = 4
+        S_Finish = 5
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <stepmode>.
+    Found 1-bit register for signal <step>.
+    Found 1-bit register for signal <rst>.
+    Found 4-bit register for signal <data>.
+    Found 1-bit register for signal <ten>.
+    Found finite state machine <FSM_6> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_12_o (positive)                      |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <wr_cpu_ctl> synthesized.
+
+Synthesizing Unit <wr_bus_addr>.
+    Related source file is "E:\nes\s1\proj\txrx\wr_bus_addr.v".
+        S_Wait = 0
+        S_Send = 1
+        S_Finish = 2
+    Found 1-bit register for signal <ten>.
+    Found 8-bit register for signal <da>.
+    Found 16-bit register for signal <adr>.
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_7> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_16_o (positive)                      |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit 4-to-1 multiplexer for signal <opcode[5]_opcode[3]_wide_mux_4_OUT> created at line 57.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <wr_bus_addr> synthesized.
+
+Synthesizing Unit <wr_bus_data>.
+    Related source file is "E:\nes\s1\proj\txrx\wr_bus_data.v".
+        S_Wait = 0
+        S_ReadBus = 1
+        S_WriteBus = 2
+        S_Send = 3
+        S_Finish = 4
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <rcmd>.
+    Found 1-bit register for signal <rw>.
+    Found 8-bit register for signal <da>.
+    Found 1-bit register for signal <dataRead<7>>.
+    Found 1-bit register for signal <dataRead<6>>.
+    Found 1-bit register for signal <dataRead<5>>.
+    Found 1-bit register for signal <dataRead<4>>.
+    Found 1-bit register for signal <dataRead<3>>.
+    Found 1-bit register for signal <dataRead<2>>.
+    Found 1-bit register for signal <dataRead<1>>.
+    Found 1-bit register for signal <dataRead<0>>.
+    Found 1-bit register for signal <ten>.
+    Found finite state machine <FSM_8> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_18_o (positive)                      |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred  20 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <wr_bus_data> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 2
+# Registers                                            : 48
+ 1-bit register                                        : 33
+ 10-bit register                                       : 2
+ 16-bit register                                       : 3
+ 4-bit register                                        : 2
+ 8-bit register                                        : 8
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 3
+# Multiplexers                                         : 51
+ 1-bit 2-to-1 multiplexer                              : 17
+ 10-bit 2-to-1 multiplexer                             : 10
+ 16-bit 2-to-1 multiplexer                             : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 7
+ 4-bit 15-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 14
+# FSMs                                                 : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/RAM_2k.ngc>.
+Loading core <RAM_2k> for timing and area information for instance <ram>.
+INFO:Xst:2261 - The FF/Latch <state> in Unit <RAM1> is equivalent to the following FF/Latch, which will be removed : <fin> 
+WARNING:Xst:1710 - FF/Latch <addr2_15> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_14> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_13> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_12> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_11> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_10> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_9> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_8> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_7> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_6> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_5> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_4> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_3> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_2> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_1> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <addr2_0> (without init value) has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cmd2> has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <channel> has a constant value of 0 in block <bushub1>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 2
+# Registers                                            : 173
+ Flip-Flops                                            : 173
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 3
+# Multiplexers                                         : 66
+ 1-bit 2-to-1 multiplexer                              : 33
+ 10-bit 2-to-1 multiplexer                             : 10
+ 16-bit 4-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 7
+ 4-bit 15-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 14
+# FSMs                                                 : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <addr2_15> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_14> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_13> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_12> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_11> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_10> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_9> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_8> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_7> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_6> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_5> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_4> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_3> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_2> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_1> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr2_0> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cmd2> has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <channel> has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rdata2_0> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rdata2_1> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rdata2_2> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rdata2_3> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rdata2_4> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rdata2_5> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rdata2_6> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rdata2_7> (without init value) has a constant value of 0 in block <BusHub>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <state> in Unit <BUS_RAM_2k> is equivalent to the following FF/Latch, which will be removed : <fin> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <bushub1/FSM_0> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <tx1/FSM_1> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <rx1/FSM_2> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <cpu_clk_ctl1/FSM_3> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 01
+ 01    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <wr_ping_1/FSM_4> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <wr_reg_read_1/FSM_5> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <wr_cpu_ctl_1/FSM_6> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 011   | 011
+ 100   | 100
+ 101   | 101
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <wr_bus_addr_1/FSM_7> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <wr_bus_data_1/FSM_8> on signal <state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0011  | 001
+ 0010  | 010
+ 0001  | 011
+ 0100  | 100
+-------------------
+
+Optimizing unit <txrx> ...
+
+Optimizing unit <BusHub> ...
+
+Optimizing unit <BUS_RAM_2k> ...
+
+Optimizing unit <cy_tx> ...
+WARNING:Xst:1293 - FF/Latch <counter_9> has a constant value of 0 in block <cy_tx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <cy_rx> ...
+
+Optimizing unit <cpu_clk_ctl> ...
+INFO:Xst:2261 - The FF/Latch <clkctl> in Unit <cpu_clk_ctl> is equivalent to the following FF/Latch, which will be removed : <busy> 
+
+Optimizing unit <wr_ping> ...
+
+Optimizing unit <wr_reg_read> ...
+
+Optimizing unit <wr_cpu_ctl> ...
+
+Optimizing unit <wr_bus_addr> ...
+
+Optimizing unit <wr_bus_data> ...
+WARNING:Xst:2677 - Node <bushub1/fin2> of sequential type is unconnected in block <txrx>.
+WARNING:Xst:2677 - Node <cpu_clk_ctl1/cpu_rst_n> of sequential type is unconnected in block <txrx>.
+WARNING:Xst:1293 - FF/Latch <rx1/counter_9> has a constant value of 0 in block <txrx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_ping_1/data_7> (without init value) has a constant value of 0 in block <txrx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_ping_1/data_6> (without init value) has a constant value of 0 in block <txrx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_ping_1/data_5> (without init value) has a constant value of 0 in block <txrx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_bus_addr_1/da_6> (without init value) has a constant value of 0 in block <txrx>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <wr_bus_data_1/state_FSM_FFd1> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <wr_bus_data_1/ten> 
+INFO:Xst:2261 - The FF/Latch <bushub1/state_FSM_FFd1> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <bushub1/fin1> 
+INFO:Xst:2261 - The FF/Latch <wr_cpu_ctl_1/state_FSM_FFd2> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <wr_cpu_ctl_1/step> 
+INFO:Xst:2261 - The FF/Latch <wr_bus_addr_1/state_FSM_FFd1> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <wr_bus_addr_1/ten> 
+INFO:Xst:2261 - The FF/Latch <wr_bus_data_1/da_7> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <wr_bus_data_1/da_6> 
+INFO:Xst:2261 - The FF/Latch <wr_reg_read_1/state_FSM_FFd1> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <wr_reg_read_1/ten> 
+INFO:Xst:2261 - The FF/Latch <wr_ping_1/state_FSM_FFd1> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <wr_ping_1/t_en> 
+INFO:Xst:2261 - The FF/Latch <cpu_clk_ctl1/state_FSM_FFd2> in Unit <txrx> is equivalent to the following FF/Latch, which will be removed : <cpu_clk_ctl1/clkctl> 
+
+Mapping all equations...
+WARNING:Xst:2677 - Node <cpu_clk_ctl1/state_FSM_FFd1> of sequential type is unconnected in block <txrx>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block txrx, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 152
+ Flip-Flops                                            : 152
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : txrx.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 199
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 11
+#      LUT3                        : 19
+#      LUT4                        : 37
+#      LUT5                        : 19
+#      LUT6                        : 104
+#      MUXF7                       : 6
+#      VCC                         : 1
+# FlipFlops/Latches                : 152
+#      FD                          : 12
+#      FDE                         : 92
+#      FDR                         : 29
+#      FDRE                        : 18
+#      FDS                         : 1
+# RAMS                             : 1
+#      RAMB16BWER                  : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 5
+#      IBUF                        : 3
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             152  out of  11440     1%  
+ Number of Slice LUTs:                  191  out of   5720     3%  
+    Number used as Logic:               191  out of   5720     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    240
+   Number with an unused Flip Flop:      88  out of    240    36%  
+   Number with an unused LUT:            49  out of    240    20%  
+   Number of fully used LUT-FF pairs:   103  out of    240    42%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    102     4%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                  | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | IBUF+BUFG                                                                                                                              | 153   |
+bus1/RAM1/ram/N1                   | NONE(bus1/RAM1/ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 1     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.711ns (Maximum Frequency: 175.101MHz)
+   Minimum input arrival time before clock: 5.423ns
+   Maximum output required time after clock: 5.242ns
+   Maximum combinational path delay: 6.066ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.711ns (frequency: 175.101MHz)
+  Total number of paths / destination ports: 2018 / 280
+-------------------------------------------------------------------------
+Delay:               5.711ns (Levels of Logic = 4)
+  Source:            rx1/counter_4 (FF)
+  Destination:       rx1/counter_5 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: rx1/counter_4 to rx1/counter_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.525   1.271  rx1/counter_4 (rx1/counter_4)
+     LUT6:I1->O            8   0.254   0.944  rx1/n002711 (rx1/n00271)
+     LUT3:I2->O           15   0.254   1.155  rx1/n002712 (rx1/n0027)
+     LUT6:I5->O            2   0.254   0.726  rx1/Mmux_state[3]_counter[9]_wide_mux_52_OUT411 (rx1/Mmux_state[3]_counter[9]_wide_mux_52_OUT41)
+     LUT6:I5->O            1   0.254   0.000  rx1/Mmux_state[3]_counter[9]_wide_mux_52_OUT51 (rx1/state[3]_counter[9]_wide_mux_52_OUT<4>)
+     FDRE:D                    0.074          rx1/counter_4
+    ----------------------------------------
+    Total                      5.711ns (1.615ns logic, 4.096ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 177 / 165
+-------------------------------------------------------------------------
+Offset:              5.423ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       wr_reg_read_1/data_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to wr_reg_read_1/data_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            30   1.328   1.595  rst_n_IBUF (rst_n_IBUF)
+     LUT3:I1->O            1   0.250   0.910  wr_reg_read_1/_n0052_inv_SW0 (N24)
+     LUT6:I3->O            4   0.235   0.803  wr_reg_read_1/_n0052_inv (wr_reg_read_1/_n0052_inv)
+     FDE:CE                    0.302          wr_reg_read_1/data_0
+    ----------------------------------------
+    Total                      5.423ns (2.115ns logic, 3.308ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              5.242ns (Levels of Logic = 2)
+  Source:            wr_cpu_ctl_1/stepmode (FF)
+  Destination:       debug (PAD)
+  Source Clock:      clk rising
+
+  Data Path: wr_cpu_ctl_1/stepmode to debug
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   0.874  wr_cpu_ctl_1/stepmode (wr_cpu_ctl_1/stepmode)
+     LUT3:I1->O            1   0.250   0.681  cpu_clk_ctl1/Mmux_n003411 (debug_OBUF)
+     OBUF:I->O                 2.912          debug_OBUF (debug)
+    ----------------------------------------
+    Total                      5.242ns (3.687ns logic, 1.555ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.066ns (Levels of Logic = 3)
+  Source:            clk (PAD)
+  Destination:       debug (PAD)
+
+  Data Path: clk to debug
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.910  clk_IBUF (clk_IBUF)
+     LUT3:I0->O            1   0.235   0.681  cpu_clk_ctl1/Mmux_n003411 (debug_OBUF)
+     OBUF:I->O                 2.912          debug_OBUF (debug)
+    ----------------------------------------
+    Total                      6.066ns (4.475ns logic, 1.591ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.711|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.99 secs
+ 
+--> 
+
+Total memory usage is 258792 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   69 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

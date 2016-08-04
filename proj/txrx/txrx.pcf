@@ -1,0 +1,80 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jul 21 11:24:08 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "debug" LOCATE = SITE "P98" LEVEL 1;
+COMP "clk" LOCATE = SITE "P123" LEVEL 1;
+COMP "rx" LOCATE = SITE "P95" LEVEL 1;
+COMP "tx" LOCATE = SITE "P94" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "P97" LEVEL 1;
+PIN
+        bus1/RAM1/ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "bus1/RAM1/ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+TIMEGRP clk = BEL "bushub1/state_FSM_FFd2" BEL "bushub1/rw1" BEL
+        "bushub1/rdata1_7" BEL "bushub1/rdata1_6" BEL "bushub1/rdata1_5" BEL
+        "bushub1/rdata1_4" BEL "bushub1/rdata1_3" BEL "bushub1/rdata1_2" BEL
+        "bushub1/rdata1_1" BEL "bushub1/rdata1_0" BEL "bushub1/wdata1_7" BEL
+        "bushub1/wdata1_6" BEL "bushub1/wdata1_5" BEL "bushub1/wdata1_4" BEL
+        "bushub1/wdata1_3" BEL "bushub1/wdata1_2" BEL "bushub1/wdata1_1" BEL
+        "bushub1/wdata1_0" BEL "bushub1/addr1_15" BEL "bushub1/addr1_14" BEL
+        "bushub1/addr1_13" BEL "bushub1/addr1_12" BEL "bushub1/addr1_11" BEL
+        "bushub1/addr1_10" BEL "bushub1/addr1_9" BEL "bushub1/addr1_8" BEL
+        "bushub1/addr1_7" BEL "bushub1/addr1_6" BEL "bushub1/addr1_5" BEL
+        "bushub1/addr1_4" BEL "bushub1/addr1_3" BEL "bushub1/addr1_2" BEL
+        "bushub1/addr1_1" BEL "bushub1/addr1_0" BEL "tx1/state_FSM_FFd1" BEL
+        "tx1/state_FSM_FFd2" BEL "tx1/state_FSM_FFd3" BEL "tx1/state_FSM_FFd4"
+        BEL "tx1/counter_8" BEL "tx1/counter_7" BEL "tx1/counter_6" BEL
+        "tx1/counter_5" BEL "tx1/counter_4" BEL "tx1/counter_3" BEL
+        "tx1/counter_2" BEL "tx1/counter_1" BEL "tx1/counter_0" BEL "tx1/da_7"
+        BEL "tx1/da_6" BEL "tx1/da_5" BEL "tx1/da_4" BEL "tx1/da_3" BEL
+        "tx1/da_2" BEL "tx1/da_1" BEL "tx1/da_0" BEL "rx1/state_FSM_FFd2" BEL
+        "rx1/state_FSM_FFd3" BEL "rx1/state_FSM_FFd1" BEL "rx1/state_FSM_FFd4"
+        BEL "rx1/counter_8" BEL "rx1/counter_7" BEL "rx1/counter_6" BEL
+        "rx1/counter_5" BEL "rx1/counter_4" BEL "rx1/counter_3" BEL
+        "rx1/counter_2" BEL "rx1/counter_1" BEL "rx1/counter_0" BEL
+        "wr_ping_1/state_FSM_FFd1" BEL "wr_ping_1/state_FSM_FFd2" BEL
+        "wr_ping_1/data_4" BEL "wr_ping_1/data_3" BEL "wr_ping_1/data_2" BEL
+        "wr_ping_1/data_1" BEL "wr_ping_1/data_0" BEL
+        "wr_reg_read_1/state_FSM_FFd2" BEL "wr_reg_read_1/state_FSM_FFd1" BEL
+        "wr_reg_read_1/data_3" BEL "wr_reg_read_1/data_2" BEL
+        "wr_reg_read_1/data_1" BEL "wr_reg_read_1/data_0" BEL
+        "wr_cpu_ctl_1/state_FSM_FFd2" BEL "wr_cpu_ctl_1/state_FSM_FFd1" BEL
+        "wr_cpu_ctl_1/data_3" BEL "wr_cpu_ctl_1/data_2" BEL
+        "wr_cpu_ctl_1/data_1" BEL "wr_cpu_ctl_1/data_0" BEL
+        "wr_bus_addr_1/state_FSM_FFd2" BEL "wr_bus_addr_1/state_FSM_FFd1" BEL
+        "wr_bus_addr_1/adr_15" BEL "wr_bus_addr_1/adr_14" BEL
+        "wr_bus_addr_1/adr_13" BEL "wr_bus_addr_1/adr_12" BEL
+        "wr_bus_addr_1/adr_11" BEL "wr_bus_addr_1/adr_10" BEL
+        "wr_bus_addr_1/adr_9" BEL "wr_bus_addr_1/adr_8" BEL
+        "wr_bus_addr_1/adr_7" BEL "wr_bus_addr_1/adr_6" BEL
+        "wr_bus_addr_1/adr_5" BEL "wr_bus_addr_1/adr_4" BEL
+        "wr_bus_addr_1/adr_3" BEL "wr_bus_addr_1/adr_2" BEL
+        "wr_bus_addr_1/adr_1" BEL "wr_bus_addr_1/adr_0" BEL
+        "wr_bus_addr_1/da_7" BEL "wr_bus_addr_1/da_5" BEL "wr_bus_addr_1/da_4"
+        BEL "wr_bus_addr_1/da_3" BEL "wr_bus_addr_1/da_2" BEL
+        "wr_bus_addr_1/da_1" BEL "wr_bus_addr_1/da_0" BEL
+        "wr_bus_data_1/state_FSM_FFd1" BEL "wr_bus_data_1/state_FSM_FFd2" BEL
+        "wr_bus_data_1/state_FSM_FFd3" BEL "wr_bus_data_1/da_7" BEL
+        "wr_bus_data_1/da_5" BEL "wr_bus_data_1/da_4" BEL "wr_bus_data_1/da_3"
+        BEL "wr_bus_data_1/da_2" BEL "wr_bus_data_1/da_1" BEL
+        "wr_bus_data_1/da_0" BEL "wr_bus_data_1/dataRead_7" BEL
+        "wr_bus_data_1/dataRead_6" BEL "wr_bus_data_1/dataRead_5" BEL
+        "wr_bus_data_1/dataRead_4" BEL "wr_bus_data_1/dataRead_3" BEL
+        "wr_bus_data_1/dataRead_2" BEL "wr_bus_data_1/dataRead_1" BEL
+        "wr_bus_data_1/dataRead_0" BEL "wr_bus_data_1/rcmd" BEL
+        "bus1/RAM1/wea" BEL "bus1/RAM1/state" BEL "wr_bus_data_1/rw" BEL
+        "bushub1/cmd" BEL "tx1/txr" BEL "rx1/enr" BEL "wr_cpu_ctl_1/ten" BEL
+        "wr_cpu_ctl_1/rst" BEL "wr_cpu_ctl_1/stepmode" BEL
+        "bushub1/state_FSM_FFd1" BEL "rx1/da_0" BEL "rx1/da_1" BEL "rx1/da_2"
+        BEL "rx1/da_4" BEL "rx1/da_5" BEL "rx1/da_3" BEL "rx1/da_6" BEL
+        "rx1/da_7" BEL "cpu_clk_ctl1/state_FSM_FFd2" BEL
+        "wr_cpu_ctl_1/state_FSM_FFd3" BEL "bushub1/cmd1" BEL "clk_IBUF_BUFG"
+        PIN
+        "bus1/RAM1/ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram_pins<28>"
+        BEL "debug";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+
